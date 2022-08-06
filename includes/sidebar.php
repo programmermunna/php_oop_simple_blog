@@ -1,3 +1,13 @@
+<?php
+
+  $posts = $obj->limit_post();
+  $catdata = $obj->display_category();
+
+
+
+
+?>
+
 <div class="col-lg-4">
             <div class="sidebar">
               <div class="row">
@@ -15,18 +25,19 @@
                     </div>
                     <div class="content">
                       <ul>
+
+                      <?php
+                 while($post=mysqli_fetch_assoc($posts)){ 
+
+                  if(($post['post_status']==1)){  ?>
+
                         <li><a href="post-details.html">
-                          <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
-                          <span>May 31, 2020</span>
+                          <h5><?php echo $post['post_content']?></h5>
+                          <span><?php echo $post['post_date']?></span>
                         </a></li>
-                        <li><a href="post-details.html">
-                          <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
-                          <span>May 28, 2020</span>
-                        </a></li>
-                        <li><a href="post-details.html">
-                          <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
-                          <span>May 14, 2020</span>
-                        </a></li>
+
+                   <?php  } }  ?>
+
                       </ul>
                     </div>
                   </div>
@@ -38,31 +49,16 @@
                     </div>
                     <div class="content">
                       <ul>
-                        <li><a href="#">- Nature Lifestyle</a></li>
-                        <li><a href="#">- Awesome Layouts</a></li>
-                        <li><a href="#">- Creative Ideas</a></li>
-                        <li><a href="#">- Responsive Templates</a></li>
-                        <li><a href="#">- HTML5 / CSS3 Templates</a></li>
-                        <li><a href="#">- Creative &amp; Unique</a></li>
+                        
+                        <?php
+                        while($cat = mysqli_fetch_assoc($catdata)){
+
+                            ?>
+                        <li><a href="#"><?php echo $cat['cat_name']; ?>
+
+                        <?php   }  ?>
                       </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="sidebar-item tags">
-                    <div class="sidebar-heading">
-                      <h2>Tag Clouds</h2>
-                    </div>
-                    <div class="content">
-                      <ul>
-                        <li><a href="#">Lifestyle</a></li>
-                        <li><a href="#">Creative</a></li>
-                        <li><a href="#">HTML5</a></li>
-                        <li><a href="#">Inspiration</a></li>
-                        <li><a href="#">Motivation</a></li>
-                        <li><a href="#">PSD</a></li>
-                        <li><a href="#">Responsive</a></li>
-                      </ul>
+
                     </div>
                   </div>
                 </div>

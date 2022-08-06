@@ -26,6 +26,8 @@
     <!-- Header -->
     <?php include_once("includes/header.php") ?>
     <!-- Page Content -->
+    <?php include_once("includes/banner2.php") ?>
+
     <?php include_once("includes/cta.php") ?>
     <!-- -----------------call to action -->
      <section class="blog-posts">

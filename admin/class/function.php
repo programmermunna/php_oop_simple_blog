@@ -114,6 +114,14 @@
                 return $posts ;
             }
         }
+        
+        public function limit_post(){
+            $query = "SELECT * FROM post LIMIT 5";
+            if(mysqli_query($this->conn,$query)){
+                $limit_post = mysqli_query($this->conn,$query);
+                return $limit_post ;
+            }
+        }
 
 
         public function update_post($data){

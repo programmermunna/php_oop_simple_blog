@@ -1,11 +1,6 @@
 <?php
 
-  $posts = $obj->display_post();
-
-
-
-
-
+  $posts = $obj->limit_post();
 
 
 
