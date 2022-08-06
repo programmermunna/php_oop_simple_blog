@@ -41,7 +41,7 @@
                                             </div>
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-center">
-                                            <input type="submit" name="contact" class="form-control btn btn-block btn-primary" value="Contact Now">
+                                            <input type="submit" name="contact" class=" btn btn-primary" value="Contact Now">
 
                                             </div>
                                         </form>
