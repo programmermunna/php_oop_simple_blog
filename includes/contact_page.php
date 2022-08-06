@@ -1,5 +1,17 @@
+<?php
 
+
+    if(isset($_POST['contact'])){
+        $contact = $obj->send_mail();
+    }
+
+
+
+
+?>
+    
     <body class=" bg-primary">
+        <?php if(isset($contact)){ echo $contact; }?>
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -11,22 +23,26 @@
                                     <div class="card-body">
                                         <form>
                                             <div class="form-group">
-                                                <label class="small mb-1" for="inputEmailAddress">Enter Your Name</label>
-                                                <input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="" />
-                                            </div>
-                                        <form>
-                                            <div class="form-group">
-                                                <label class="small mb-1" for="inputEmailAddress">Enter Your Email</label>
-                                                <input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="" />
+                                                <label class="small mb-1" for="name">Enter Your Name</label>
+                                                <input class="form-control py-4" id="name" type="text" placeholder="" />
                                             </div>
                                             <div class="form-group">
-                                                <label class="small mb-1" for="inputPassword">Enter Your Message</label>
+                                                <label class="small mb-1" for="email">Enter Your Email</label>
+                                                <input class="form-control py-4" id="email" type="email" placeholder="" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="subject">Enter Subject</label>
+                                                <input name = "subject" class="form-control py-4" id="subject" type="text" placeholder="" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="message">Enter Your Message</label>
                                                 <br>
                                                 <textarea style="outline:none;" name="message" id="message" cols="48" rows="0" placeholder=""></textarea>
                                             </div>
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-center">
-                                                <a class="btn btn-primary " href="index.html">Contact Now</a>
+                                            <input type="submit" name="contact" class="form-control btn btn-block btn-primary" value="Contact Now">
+
                                             </div>
                                         </form>
                                     </div>

@@ -162,6 +162,22 @@
             }
         }
 
+        public function send_mail($data){
+            $name = $data['name'];
+            $email = $data['email'];
+            $subject = $data['subject'];
+            $message = $data['message'];
+
+            $mail_head = "From: ".$name."<".$email.">\r\n";
+            $receiver = "hasan152583munna@gmail.com";
+
+            $mail = mail($receiver,$subject,$message,$mail_head)or die("Error!");
+            if($mail){
+                return "Your Message Send Successfully!";
+            }
+            
+        }
+
 
 
 
