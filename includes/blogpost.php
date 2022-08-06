@@ -26,7 +26,7 @@
                     </div>
                     <div class="down-content">
                       <span><?php echo $post['post_ctg']?></span>
-                      <a href="post-details.html"><h4><?php echo $post['post_content'];?></h4></a>
+                      <a href="single_post.php?view=post_view&&id=<?php echo $post['post_id']?>"><h4><?php echo $post['post_content']?></h4></a>
                       <ul class="post-info">
                         <li><a href="#"><?php echo $post['post_author'];?></a></li>
                         <li><a href="#"><?php echo $post['post_date'];?></a></li>

@@ -146,6 +146,14 @@
             }
         }
 
+        public function post_info($id){
+            $query = "SELECT * FROM post WHERE post_id =$id";
+            if(mysqli_query($this->conn,$query)){
+                $post_info = mysqli_query($this->conn,$query);
+                return $post_info;
+            }
+        }
+
 
 
 
