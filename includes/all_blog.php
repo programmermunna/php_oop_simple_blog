@@ -1,7 +1,7 @@
 
 <?php
 
-$posts = $obj->limit_post();
+$posts = $obj->display_post();
 
 
 ?>

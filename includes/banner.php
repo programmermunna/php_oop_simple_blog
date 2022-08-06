@@ -1,22 +1,36 @@
+
+<?php
+
+$posts = $obj->display_post();
+
+
+?>
 <div class="main-banner header-text">
       <div class="container-fluid">
         <div class="owl-banner owl-carousel">
+        <?php
+                 while($post=mysqli_fetch_assoc($posts)){ 
+
+                  if(($post['post_status']==1)){  ?>
           <div class="item">
-            <img src="assets/images/banner-item-01.jpg" alt="">
+            <img  src="./upload/<?php echo $post['post_img'];?>" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
-                  <span>Fashion</span>
+                  <span><?php echo $post['post_ctg'];?></span>
                 </div>
-                <a href="post-details.html"><h4>Morbi dapibus condimentum</h4></a>
+                <a href="post-details.html"><h4><?php echo $post['post_content'];?></h4></a>
                 <ul class="post-info">
-                  <li><a href="#">Admin</a></li>
-                  <li><a href="#">May 12, 2020</a></li>
+                  <li><a href="#"><?php echo $post['post_author'];?></a></li>
+                  <li><a href="#"><?php echo $post['post_date'];?></a></li>
                   <li><a href="#">12 Comments</a></li>
                 </ul>
               </div>
             </div>
           </div>
+          <?php  } }  ?>
+
+
           <div class="item">
             <img src="assets/images/banner-item-02.jpg" alt="">
             <div class="item-content">

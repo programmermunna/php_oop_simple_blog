@@ -52,7 +52,7 @@
                 <?php  } }  ?>
                 <div class="col-lg-12">
                   <div class="main-button">
-                    <a href="blog.html">View All Posts</a>
+                    <a href="blog.php">View All Posts</a>
                   </div>
                 </div>
               </div>

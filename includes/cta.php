@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-lg-4">
                   <div class="main-button">
-                    <a rel="nofollow" href="https://templatemo.com/tm-551-stand-blog" target="_parent">Download Now!</a>
+                    <a rel="nofollow" href="#" target="_parent">Download Now!</a>
                   </div>
                 </div>
               </div>
