@@ -37,7 +37,7 @@
             <br>
             <h2><?php echo $post['post_title']; ?></h2>
             <br>
-            <p><?php echo $post['post_content']; ?></p>
+            <p><?php echo $post['post_summery']; ?></p>
             <hr>
             <p><strong>Category </strong>: &nbsp &nbsp <?php echo $post['post_ctg']; ?></p>
             <p><strong>Tag </strong>&nbsp &nbsp &nbsp &nbsp &nbsp: &nbsp &nbsp <?php echo $post['post_tag']; ?></p>

@@ -177,6 +177,14 @@
             }
             
         }
+        public function search_post($data){
+            $search = $data['search'];
+            
+            $srcdata = "SELECT * FROM post WHERE post.post_title LIKE '%{$search}%'";
+            if($srcdata){
+                return $srcdata; 
+            }
+        }
 
 
 

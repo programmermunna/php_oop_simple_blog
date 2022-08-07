@@ -3,6 +3,11 @@
   $posts = $obj->limit_post();
   $catdata = $obj->display_category();
 
+  if(isset($_POST['submit'])){
+    $search = $_POST['search'];
+    $obj->search_post($search);
+  }
+
 
 
 
@@ -13,8 +18,9 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="sidebar-item search">
-                    <form id="search_form" name="gs" method="GET" action="#">
-                      <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
+                    <form id="search_form" name="search" method="POST" action="">
+                      <input type="text" name="search" class="searchText" placeholder="type to search..." autocomplete="on">
+                      <input type="submit" name="submit" class="btn btn-primary text-white"  value="Submit">
                     </form>
                   </div>
                 </div>
