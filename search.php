@@ -1,6 +1,11 @@
 <?php include('admin/class/function.php');
     $obj = new adminBlog();
     
+    if(isset($_POST['submit'])){
+        $obj->search_post($_POST);
+        
+      }
+    
     ?>
     
     <?php include_once("includes/head.php") ?>

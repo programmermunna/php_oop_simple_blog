@@ -177,13 +177,17 @@
             }
             
         }
+
         public function search_post($data){
-            $search = $data['search'];
+            $search = $data['search_data'];
             
-            $srcdata = "SELECT * FROM post WHERE post.post_title LIKE '%{$search}%'";
-            if($srcdata){
-                return $srcdata; 
+            $srcdata = "SELECT * FROM post WHERE post_title LIKE '$search%'";
+          //  $srcdata = "SELECT * FROM post WHERE post_title LIKE '%{$search}%'";
+            if(mysqli_query($this->conn,$srcdata)){
+                $src_info = mysqli_query($this->conn,$srcdata);
+                return $src_info;
             }
+
         }
 
 

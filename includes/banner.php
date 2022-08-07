@@ -13,13 +13,13 @@ $posts = $obj->display_post();
 
                   if(($post['post_status']==1)){  ?>
           <div class="item">
-            <img  src="./upload/<?php echo $post['post_img'];?>" alt="">
+            <img style="cursor:pointer;" src="./upload/<?php echo $post['post_img'];?>" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
                   <span><?php echo $post['post_ctg'];?></span>
                 </div>
-                <a href="post-details.html"><h4><?php echo $post['post_content'];?></h4></a>
+                <a href="post-details.html"><h4 style="cursor:pointer;"><?php echo $post['post_content'];?></h4></a>
                 <ul class="post-info">
                   <li><a href="#"><?php echo $post['post_author'];?></a></li>
                   <li><a href="#"><?php echo $post['post_date'];?></a></li>

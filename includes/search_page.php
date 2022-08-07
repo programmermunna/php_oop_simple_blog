@@ -1,14 +1,15 @@
 
 <?php
 
-$srcdata = $obj->search_post();
+$src_info = $obj->search_post();
+
 
 
 ?>
 
 <div style="max-width:100%; display:flex; flex-wrap: wrap; justify-content: center; justify-content: flex-start;" >
 <?php
-                 while($post=mysqli_fetch_assoc($srcdata)){ 
+                 while($post=mysqli_fetch_assoc($src_info)){ 
 
                   if(($post['post_status']==1)){  ?>
 

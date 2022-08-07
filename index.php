@@ -13,9 +13,9 @@
     <!-- Banner Starts Here -->
     <?php include_once("includes/banner.php") ?>
     <!-- Banner Ends Here -->
-    <?php include_once("includes/cta.php") ?>
+    <?php // include_once("includes/cta.php") ?>
     <!-- -----------------call to action -->
-     <section class="blog-posts">
+     <section style="margin-top: 0;" class="blog-posts">
       <div class="container">
         <div class="row">
         <?php include_once("includes/blogpost.php") ?>
