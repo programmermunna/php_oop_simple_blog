@@ -14,7 +14,7 @@
             <div class="copyright-text">
               <p>Copyright 2022 Stand Blog Co.
                     
-                 | Design: <a rel="nofollow" href="#" target="_parent">Munna4</a></p>
+                 | Developer: <a rel="nofollow" href="#" target="_parent">Munna4</a></p>
             </div>
           </div>
         </div>
