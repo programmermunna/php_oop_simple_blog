@@ -10,7 +10,7 @@
     <!-- Header -->
     <?php include_once("includes/header.php") ?>
     <!-- Page Content -->
-    <!-- Banner Starts Here -->
+    <!-- Banner Starts Here --> 
     <?php include_once("includes/banner2.php") ?>
     <!-- Banner Ends Here -->
     <!-- -----------------call to action -->
