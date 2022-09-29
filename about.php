@@ -2,7 +2,7 @@
     $obj = new adminBlog();
     
     ?>
-    
+    <!--     -------------------------- -->
     <?php include_once("includes/head.php") ?>
     <body>
     <?php include_once("includes/preloader.php") ?>
