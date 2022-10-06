@@ -25,4 +25,4 @@
     <?php include_once("includes/footer.php") ?>
     <?php include_once("includes/script.php") ?>
     </body>
-    </html>
+    </html>               
