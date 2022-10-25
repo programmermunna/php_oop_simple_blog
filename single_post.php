@@ -28,7 +28,7 @@
     <!-- Page Content -->
     <?php include_once("includes/banner2.php") ?>
     <!-- -----------------call to action -->
-     <section class="blog-posts">
+     <section class="blog-posts"> 
       <div class="container">
         <div class="row">
         <div class="col-lg-8">
